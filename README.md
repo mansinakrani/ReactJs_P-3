@@ -17,7 +17,11 @@ npm start
 ```
 
 ## Demo
-[Image](https://github.com/mansinakrani/ReactJS_pr-3_todo-app/blob/Practical-3_reactJS/image_Practical-3.png)
+[Image](https://github.com/mansinakrani/ReactJs_P-3/blob/reactjs_pr-3/image_Practical-3.png)
 
 ## Repo Link
-[Practical - 3](https://github.com/mansinakrani/ReactJS_pr-3_todo-app/tree/Practical-3_reactJS)# ReactJs_P-3
+[Practical - 3](https://github.com/mansinakrani/ReactJs_P-3.git)
+
+## PR Link
+[PR](https://github.com/mansinakrani/ReactJs_P-3/pull/1#issue-1148878130)
+
