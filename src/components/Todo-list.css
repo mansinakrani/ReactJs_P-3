@@ -1,0 +1,59 @@
+.Todo:hover {
+  box-shadow: 5px 5px 5px 5px #888888;
+}
+  
+.Todo {
+  margin-top: 5%;
+  text-align: center;
+  background-color: white;
+  margin-left: 40%;
+  width: 25%;
+}
+  
+.btn {
+  color: black;
+  background-color: #52e4a6;
+  align-items: center;
+  justify-content: "center";
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+}
+  
+.TodoList {
+  list-style: none;
+  font-size: 15px;
+  color: black;
+  text-align: justify;
+  overflow-y: auto;
+  height: 150px;
+  margin-right: 15%;
+}
+  
+.inp {
+  outline: none;
+  margin: 10px;
+  font-size: 15px;
+  display: none;
+  background-color: lightblue;
+  align-items: center;
+  margin-left: 10%;
+  width: 50%;
+}
+
+.li {
+  margin-top: 3%;
+}
+  
+.last_appand {
+  color: green;
+  font-weight: bold;
+  background-color: white;
+  align-items: center;
+  justify-content: "center";
+  float: right;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border-color: green;
+}

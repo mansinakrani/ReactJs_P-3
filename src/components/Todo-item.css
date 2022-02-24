@@ -1,0 +1,29 @@
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  background: white;
+  padding: 6px;
+  border-radius: 5px;
+  width: 90%;
+}
+  
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+  
+.delete-icon {
+  margin-right: 5px;
+  color: black;
+}
+
+.TodoList {
+  overflow-y: auto;
+  height: 200px;
+  list-style: none;
+}
+  
