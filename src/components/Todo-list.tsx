@@ -24,11 +24,13 @@ function TodoList() {
     }, [todos]);
   
     const addTodo = (todo: Todo_) => {
+      if(!todo.text || /^\s*$/.test(todo.text)) {
+        return;
+      }
       const newTodos = [...todos, todo];
       setTodos(newTodos);
       localStorage.setItem("todos", JSON.stringify(todos));
     };
-
     const completeTodo = (id: number) => {
       const updatedTodos = todos.map((todo) => {
         if (todo.id === id) {

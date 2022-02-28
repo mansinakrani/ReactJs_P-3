@@ -13,7 +13,7 @@ export const TodoForm = (props: TodoFormProps):JSX.Element => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     document.addEventListener("keydown", function (event: KeyboardEventInit) {
       if (event.key === "Escape") {
-        (document.getElementById("bt") as HTMLFormElement).style.display =
+        (document.getElementById("btn2") as HTMLFormElement).style.display =
           "inline-block";
         (document.getElementById("input1") as HTMLFormElement).style.display =
           "none";
@@ -22,7 +22,7 @@ export const TodoForm = (props: TodoFormProps):JSX.Element => {
     setNewTodo((e.target as HTMLInputElement).value);
   };
   const onSubmitbtn = () => {
-    (document.getElementById("bt") as HTMLFormElement).style.display = "none";
+    (document.getElementById("btn") as HTMLFormElement).style.display = "none";
     (document.getElementById("input1") as HTMLFormElement).style.display =
       "block";
   };
@@ -36,21 +36,26 @@ export const TodoForm = (props: TodoFormProps):JSX.Element => {
         id: Math.floor(Math.random() * 10000),
         text: newTodo,
       });
-      setNewTodo("");
+      setNewTodo('');
     }
   };
  return (
     <>
       <form onSubmit={handleSubmit} className="todo-form">
         <input
-          id="input1"
+          id='input1'
+          type="text"
+          placeholder='Enter task'
           value={newTodo}
-          onChange={handleChange}
           name="text"
+          onChange={handleChange}
           className="todo-input"
         />
+        <button id='btn2' type='submit' className="todo-add-button">
+          <strong>Add Task</strong>
+        </button>
       </form>
-      <button id="bt" onClick={onSubmitbtn} className="todo-button">
+      <button id="btn" onClick={onSubmitbtn} className="todo-button">
         +
       </button>
     </>
